@@ -1,0 +1,6 @@
+<GridLayout rows="*, 30, *,  auto" class="background">
+    <Label row="0" *ngIf="id !== 'tie'" class="fa trophy" [text]="'fa-trophy' | fonticon"></Label>
+    <Label row="0" [text]="result" class="result"></Label>
+    <Button row="2" text="Play Again" (tap)="gameRestart()"></Button>
+    <Label row="3" text="Tic Tac Toe - Petri Niskanen 2017" class="madeby"></Label>
+</GridLayout>

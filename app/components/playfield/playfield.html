@@ -1,0 +1,17 @@
+<GridLayout rows="45, *, *, *" columns="auto, *, auto, *, auto, *">
+
+    <Label row="0" col="0" [colSpan]="6" text="player - {{activePlayer}}"></Label>
+
+    <Button row="1" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="1"></Button>
+    <Button row="1" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="2"></Button>
+    <Button row="1" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="4"></Button>
+
+    <Button row="2" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="8"></Button>
+    <Button row="2" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="16"></Button>
+    <Button row="2" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="32"></Button>
+
+    <Button row="3" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="64"></Button>
+    <Button row="3" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="128"></Button>
+    <Button row="3" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="256"></Button>
+
+</GridLayout>

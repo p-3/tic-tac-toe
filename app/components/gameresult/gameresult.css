@@ -1,0 +1,28 @@
+button {
+    color: darkslategray;
+    text-align: center;
+    font-size: 20px;
+    background-color: lightgray;
+    font-family: 'MobileFont';
+    height: 40px;
+}
+
+.trophy {
+    font-size: 150px;
+    text-align: center;
+    color: lightgray;
+    padding-top: 100px;
+}
+
+.result {
+    font-size: 40px;
+    color: darkslategray;
+    text-align: center;
+    font-family: 'MobileFont';
+    margin-top: 250px
+}
+
+.madeby {
+    font-size: 10px;
+    text-align: center;
+}
