@@ -4,8 +4,8 @@ button {
     text-align: center;
     font-size: 90%;
     font-weight: bolder;
-    animation-name: example;
-    animation-duration: 2s;
+    animation-name: animation;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
     font-family: 'MobileFont';
 }
@@ -21,12 +21,12 @@ label {
     text-align: center;
 }
 
-@keyframes example {
-    from {
+@keyframes animation {
+    0% {
         background-color: white;
         color: white;
     }
-    to {
+    100% {
         background-color: lightgray;
         color: darkslategray;
     }
