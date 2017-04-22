@@ -1,12 +1,12 @@
-import {NgModule, NO_ERRORS_SCHEMA} from "@angular/core";
-import {NativeScriptModule} from "nativescript-angular/nativescript.module";
-import {AppRoutingModule} from "./app.routing";
-import {AppComponent} from "./app.component";
+import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
+import {NativeScriptModule} from 'nativescript-angular/nativescript.module';
+import {AppRoutingModule} from './app.routing';
+import {AppComponent} from './app.component';
 
-import {GameService} from "./services/game.service";
-import {PlayFieldComponent} from "./components/playfield/playfield.component";
-import {GameResultComponent} from "./components/gameresult/gameresult.component";
-import {TNSFontIconModule} from "nativescript-ngx-fonticon";
+import {GameService} from './services/game.service';
+import {PlayFieldComponent} from './components/playfield/playfield.component';
+import {GameResultComponent} from './components/gameresult/gameresult.component';
+import {TNSFontIconModule} from 'nativescript-ngx-fonticon';
 
 @NgModule({
     bootstrap: [
@@ -16,7 +16,7 @@ import {TNSFontIconModule} from "nativescript-ngx-fonticon";
         NativeScriptModule,
         AppRoutingModule,
         TNSFontIconModule.forRoot({
-            "fa": "./assets/font-awesome.css"
+            'fa': './assets/font-awesome.css'
         })
     ],
     declarations: [

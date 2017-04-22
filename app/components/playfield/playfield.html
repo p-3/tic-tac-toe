@@ -1,17 +1,17 @@
-<GridLayout rows="45, *, *, *" columns="auto, *, auto, *, auto, *">
+<grid-layout rows="45, *, *, *" columns="auto, *, auto, *, auto, *">
 
-    <Label row="0" col="0" [colSpan]="6" text="player - {{activePlayer}}"></Label>
+    <label row="0" col="0" [colSpan]="6" text="player - {{activePlayer}}"></label>
 
-    <Button row="1" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="1"></Button>
-    <Button row="1" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="2"></Button>
-    <Button row="1" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="4"></Button>
+    <button row="1" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="1"></button>
+    <button row="1" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="2"></button>
+    <button row="1" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="4"></button>
 
-    <Button row="2" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="8"></Button>
-    <Button row="2" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="16"></Button>
-    <Button row="2" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="32"></Button>
+    <button row="2" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="8"></button>
+    <button row="2" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="16"></button>
+    <button row="2" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="32"></button>
 
-    <Button row="3" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="64"></Button>
-    <Button row="3" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="128"></Button>
-    <Button row="3" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="256"></Button>
+    <button row="3" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="64"></button>
+    <button row="3" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="128"></button>
+    <button row="3" col="4" [colSpan]="2" (tap)="toggleTile($event)" score="256"></button>
 
-</GridLayout>
+</grid-layout>

@@ -1,14 +1,14 @@
-import {NgModule} from "@angular/core";
-import {NativeScriptRouterModule} from "nativescript-angular/router";
-import {Routes} from "@angular/router";
+import {NgModule} from '@angular/core';
+import {NativeScriptRouterModule} from 'nativescript-angular/router';
+import {Routes} from '@angular/router';
 
-import {PlayFieldComponent} from "./components/playfield/playfield.component";
-import {GameResultComponent} from "./components/gameresult/gameresult.component";
+import {PlayFieldComponent} from './components/playfield/playfield.component';
+import {GameResultComponent} from './components/gameresult/gameresult.component';
 
 const routes: Routes = [
-    {path: "", redirectTo: "/playfield", pathMatch: "full"},
-    {path: "playfield", component: PlayFieldComponent},
-    {path: "gameresult/:id", component: GameResultComponent},
+    {path: '', redirectTo: '/playfield', pathMatch: 'full'},
+    {path: 'playfield', component: PlayFieldComponent},
+    {path: 'gameresult/:id', component: GameResultComponent},
 
 ];
 

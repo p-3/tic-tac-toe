@@ -33,5 +33,4 @@ export class GameService {
         }
         return false;
     }
-
 }
