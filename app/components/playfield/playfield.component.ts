@@ -3,35 +3,28 @@ import {EventData} from 'data/observable';
 import {Router} from '@angular/router';
 import {GameService} from '../../services/game.service';
 import {Page} from 'ui/page';
-let sound = require("nativescript-sound");
 
 @Component({
     selector: 'playfield',
     moduleId: module.id,
     templateUrl: './playfield.html',
     styleUrls: ['./playfield.css'],
-
 })
-export class PlayFieldComponent implements OnInit {
-    private player: any = 'x';
-    private activePlayer: any;
+
+export class PlayFieldComponent {
+    private player: string = 'x';
+    private activePlayer: string = 'player - x';
     private scores: any = {x: 0, o: 0};
     private turns: number = 0;
-    private clickSound: any = sound.create("~/assets/sound/click.mp3");
 
     constructor(private gameService: GameService, private router: Router, private page: Page) {
         page.actionBarHidden = true;
     }
 
-    ngOnInit(): void {
-        this.togglePlayer();
-    }
-
     toggleTile(args: EventData) {
-        this.togglePlayer();
-        this.clickSound.reset();
-        this.clickSound.play();
         this.turns++;
+        this.player = (this.player === 'x') ? 'o' : 'x';
+        this.activePlayer = (this.player === 'x') ? 'player - o' : 'player - x';
 
         const button = args.object;
         button.set('text', this.player.toUpperCase());
@@ -45,10 +38,6 @@ export class PlayFieldComponent implements OnInit {
                 this.router.navigate(['gameresult/tie']);
             }
         }
-    }
-
-    togglePlayer() {
-        this.player = (this.player === 'x') ? 'o' : 'x';
-        this.activePlayer = (this.player === 'x') ? 'o' : 'x';
+        this.gameService.clickSound();
     }
 }

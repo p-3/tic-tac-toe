@@ -1,6 +1,6 @@
 <grid-layout rows="45, *, *, *" columns="auto, *, auto, *, auto, *">
 
-    <label row="0" col="0" [colSpan]="6" text="player - {{activePlayer}}"></label>
+    <label row="0" col="0" [colSpan]="6" [text]="activePlayer"></label>
 
     <button row="1" col="0" [colSpan]="2" (tap)="toggleTile($event)" score="1"></button>
     <button row="1" col="2" [colSpan]="2" (tap)="toggleTile($event)" score="2"></button>
