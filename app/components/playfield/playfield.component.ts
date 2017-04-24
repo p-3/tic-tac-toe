@@ -13,12 +13,9 @@ let sound = require("nativescript-sound");
 
 })
 export class PlayFieldComponent implements OnInit {
-
-    private player: any;
+    private player: any = 'x';
     private activePlayer: any;
-    private scores: any = {
-        x: 0, o: 0
-    };
+    private scores: any = {x: 0, o: 0};
     private turns: number = 0;
     private clickSound: any = sound.create("~/assets/sound/click.mp3");
 
@@ -31,13 +28,12 @@ export class PlayFieldComponent implements OnInit {
     }
 
     toggleTile(args: EventData) {
-
         this.togglePlayer();
+        this.clickSound.reset();
         this.clickSound.play();
         this.turns++;
 
         const button = args.object;
-        button.set('isEnabled', false);
         button.set('text', this.player.toUpperCase());
         button.set('isEnabled', false);
 
@@ -52,7 +48,7 @@ export class PlayFieldComponent implements OnInit {
     }
 
     togglePlayer() {
-        this.player = (this.gameService.getActivePlayer()) ? 'o' : 'x';
+        this.player = (this.player === 'x') ? 'o' : 'x';
         this.activePlayer = (this.player === 'x') ? 'o' : 'x';
     }
 }

@@ -2,12 +2,6 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class GameService {
-    private player: boolean = false;
-
-    getActivePlayer(): boolean {
-        this.player = !this.player;
-        return this.player;
-    }
 
     checkWins(playerScore): boolean {
         /*
