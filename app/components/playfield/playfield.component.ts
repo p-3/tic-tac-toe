@@ -23,8 +23,7 @@ export class PlayFieldComponent {
 
     toggleTile(args: EventData) {
         this.turns++;
-        this.player = (this.player === 'x') ? 'o' : 'x';
-        this.activePlayer = (this.player === 'x') ? 'player - o' : 'player - x';
+        this.activePlayer = `player -  ${(this.player === 'x') ? 'o' : 'x'}`;
 
         const button = args.object;
         button.set('text', this.player.toUpperCase());
@@ -38,6 +37,7 @@ export class PlayFieldComponent {
                 this.router.navigate(['gameresult/tie']);
             }
         }
+        this.player = (this.player === 'o') ? 'x' : 'o';
         this.gameService.clickSound();
     }
 }

@@ -1,10 +1,10 @@
-import {Injectable} from "@angular/core";
-let sound = require("nativescript-sound");
+import {Injectable} from '@angular/core';
+let sound = require('nativescript-sound');
 
 @Injectable()
 export class GameService {
 
-    private soundFile: any = sound.create("~/assets/sound/click.mp3");
+    private soundFile: any = sound.create('~/assets/sound/click.mp3');
 
     checkWins(playerScore): boolean {
 
