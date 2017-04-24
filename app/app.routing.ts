@@ -9,7 +9,6 @@ const routes: Routes = [
     {path: '', redirectTo: '/playfield', pathMatch: 'full'},
     {path: 'playfield', component: PlayFieldComponent},
     {path: 'gameresult/:id', component: GameResultComponent},
-
 ];
 
 @NgModule({

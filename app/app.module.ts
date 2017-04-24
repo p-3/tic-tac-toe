@@ -8,7 +8,6 @@ import {PlayFieldComponent} from './components/playfield/playfield.component';
 import {GameResultComponent} from './components/gameresult/gameresult.component';
 import {TNSFontIconModule} from 'nativescript-ngx-fonticon';
 
-
 @NgModule({
     bootstrap: [
         AppComponent

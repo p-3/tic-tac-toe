@@ -29,15 +29,15 @@ export class PlayFieldComponent {
         button.set('text', this.player.toUpperCase());
         button.set('isEnabled', false);
 
-        this.scores[this.player] = (this.scores[this.player] + button.get('score'));
-        if (this.gameService.checkWins(this.scores[this.player])) {
+        this.scores[this.player] = this.scores[this.player] + button.get('score');
+
+        if (GameService.checkWins(this.scores[this.player])) {
             this.router.navigate(['gameresult/' + this.player.toUpperCase()]);
-        } else {
-            if (this.turns === 9) {
-                this.router.navigate(['gameresult/tie']);
-            }
+        } else if (this.turns === 9) {
+            this.router.navigate(['gameresult/tie']);
         }
-        this.player = (this.player === 'o') ? 'x' : 'o';
+
+        this.player = this.player === 'o' ? 'x' : 'o';
         this.gameService.clickSound();
     }
 }

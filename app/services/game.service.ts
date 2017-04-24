@@ -6,7 +6,7 @@ export class GameService {
 
     private soundFile: any = sound.create('~/assets/sound/click.mp3');
 
-    checkWins(playerScore): boolean {
+    static checkWins(playerScore): boolean {
 
         //       273                 84
         //        \               /
