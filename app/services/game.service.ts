@@ -20,10 +20,8 @@ export class GameService {
 
         const possibleWins = [7, 56, 448, 73, 146, 292, 273, 84];
 
-        for (let i = 0; i < possibleWins.length; i++) {
-            if ((possibleWins[i] & playerScore) === possibleWins[i]) {
-                return true;
-            }
+        for (let i = 0; i < possibleWins.length; i++) if ((possibleWins[i] & playerScore) === possibleWins[i]) {
+            return true;
         }
         return false;
     }
