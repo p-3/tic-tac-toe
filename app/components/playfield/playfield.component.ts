@@ -5,8 +5,8 @@ import {GameService} from '../../services/game.service';
 import {Page} from 'ui/page';
 
 @Component({
-    selector: 'playfield',
     moduleId: module.id,
+    selector: 'playfield',
     templateUrl: './playfield.html',
     styleUrls: ['./playfield.css'],
 })
@@ -23,7 +23,7 @@ export class PlayFieldComponent {
 
     toggleTile(args: EventData) {
         this.turns++;
-        this.activePlayer = `player -  ${(this.player === 'x') ? 'o' : 'x'}`;
+        this.activePlayer = `player - ${this.player === 'x' ? 'o' : 'x'}`;
 
         const button = args.object;
         button.set('text', this.player.toUpperCase());
@@ -31,7 +31,7 @@ export class PlayFieldComponent {
 
         this.scores[this.player] = (this.scores[this.player] + button.get('score'));
         if (this.gameService.checkWins(this.scores[this.player])) {
-            this.router.navigate(['gameresult/' + this.player]);
+            this.router.navigate(['gameresult/' + this.player.toUpperCase()]);
         } else {
             if (this.turns === 9) {
                 this.router.navigate(['gameresult/tie']);

@@ -5,8 +5,8 @@ import {Page} from 'ui/page';
 import {TNSFontIconService} from 'nativescript-ngx-fonticon';
 
 @Component({
-    selector: 'gameresult',
     moduleId: module.id,
+    selector: 'gameresult',
     templateUrl: './gameresult.html',
     styleUrls: ['./gameresult.css']
 })
@@ -20,7 +20,7 @@ export class GameResultComponent implements OnInit {
 
     ngOnInit(): void {
         this.id = this.route.snapshot.params['id'];
-        this.result = this.id === 'tie' ? 'tie game' : this.id.toUpperCase() + ' won the game!';
+        this.result = this.id === 'tie' ? 'tie game' : this.id + ' won the game!';
     }
 
     gameRestart() {
