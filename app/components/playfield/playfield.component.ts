@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {EventData} from 'data/observable';
 import {Router} from '@angular/router';
 import {GameService} from '../../services/game.service';
