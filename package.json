@@ -4,7 +4,7 @@
   "readme": "README.md",
   "repository": "https://github.com/p-3/tic-tac-toe.git",
   "nativescript": {
-    "id": "org.propal.TicTacToe",
+    "id": "com.propal.tictactoe",
     "tns-ios": {
       "version": "2.5.0"
     },
