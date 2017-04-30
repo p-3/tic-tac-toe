@@ -5,10 +5,10 @@
   "repository": "https://github.com/p-3/tic-tac-toe.git",
   "nativescript": {
     "id": "com.propal.tictactoe",
-    "tns-ios": {
+    "tns-android": {
       "version": "2.5.0"
     },
-    "tns-android": {
+    "tns-ios": {
       "version": "2.5.0"
     }
   },
@@ -26,15 +26,20 @@
     "nativescript-ngx-fonticon": "^2.1.2",
     "nativescript-sound": "^1.0.4",
     "nativescript-theme-core": "~1.0.2",
+    "nativescript-unit-test-runner": "^0.3.4",
     "reflect-metadata": "~0.1.8",
     "rxjs": "~5.2.0",
-    "tns-core-modules": "2.5.2",
+    "tns-core-modules": "^2.5.2",
     "zone.js": "~0.8.2"
   },
   "devDependencies": {
     "babel-traverse": "6.24.1",
     "babel-types": "6.24.1",
     "babylon": "6.16.1",
+    "jasmine-core": "^2.6.1",
+    "karma": "^1.6.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-nativescript-launcher": "^0.4.0",
     "lazy": "1.0.11",
     "nativescript-dev-android-snapshot": "^0.*.*",
     "nativescript-dev-typescript": "~0.3.5",

@@ -4,7 +4,6 @@ npm-debug.log
 mkmf.log
 
 #CompiledTSFiles
-**/*.js
-**/*.map.js
+/app/**/*.js
 /platforms
 /.idea
