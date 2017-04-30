@@ -1,4 +1,4 @@
-<grid-layout rows="*, 30, *,  auto" class="background">
+<grid-layout rows="*, *, *,  auto" class="background">
     <label row="0" *ngIf="id !== 'tie'" class="fa trophy" [text]="'fa-trophy' | fonticon"></label>
     <label row="0" [text]="result" class="result"></label>
     <button row="2" text="Play Again" (tap)="gameRestart()"></button>
