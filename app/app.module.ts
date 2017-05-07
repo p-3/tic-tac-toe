@@ -33,3 +33,5 @@ import {TNSFontIconModule} from 'nativescript-ngx-fonticon';
 })
 export class AppModule {
 }
+
+

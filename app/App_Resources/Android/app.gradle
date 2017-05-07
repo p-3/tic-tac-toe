@@ -8,9 +8,9 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.propal.TicTacToe"  
+    applicationId = "org.propal.tictactoe"
   }  
   aaptOptions {  
     additionalParameters "--no-version-vectors"  
-  }  
+  }
 } 
