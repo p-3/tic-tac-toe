@@ -1,6 +1,6 @@
 # TicTacToe
 
-Simple two player Tic Tac Toe game build with NativeScript (Angular 4 and TypeScript).
+Simple two player Tic Tac Toe game build with NativeScript (Angular 4 and TypeScript) for Android and IOS devices.
 
 The idea of this is to show you how an basic app is built with NativeScript.
 
