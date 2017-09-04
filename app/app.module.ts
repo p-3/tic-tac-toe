@@ -6,7 +6,6 @@ import {AppComponent} from './app.component';
 import {GameService} from './services/game.service';
 import {PlayFieldComponent} from './components/playfield/playfield.component';
 import {GameResultComponent} from './components/gameresult/gameresult.component';
-import {TNSFontIconModule} from 'nativescript-ngx-fonticon';
 
 @NgModule({
     bootstrap: [
@@ -15,9 +14,6 @@ import {TNSFontIconModule} from 'nativescript-ngx-fonticon';
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        TNSFontIconModule.forRoot({
-            'fa': './assets/font-awesome.css'
-        })
     ],
     declarations: [
         AppComponent,

@@ -8,9 +8,14 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.propal.tictactoe"
+    applicationId = "org.nativescript.DiaLog"
+    multiDexEnabled true
   }  
   aaptOptions {  
     additionalParameters "--no-version-vectors"  
   }
-} 
+  dexOptions {
+    javaMaxHeapSize "4g"
+  }
+}
+

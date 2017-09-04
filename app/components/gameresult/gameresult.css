@@ -3,7 +3,7 @@ button {
     text-align: center;
     font-size: 20px;
     background-color: lightgray;
-    font-family: 'MobileFont';
+    font-family: 'Mobile Font';
     height: 40px;
 }
 
@@ -11,6 +11,7 @@ button {
     font-size: 150px;
     text-align: center;
     color: lightgray;
+    font-family: 'FontAwesome';
     padding-top: 100px;
 }
 
@@ -18,7 +19,7 @@ button {
     font-size: 40px;
     color: darkslategray;
     text-align: center;
-    font-family: 'MobileFont';
+    font-family: 'Mobile Font';
 }
 
 .madeby {

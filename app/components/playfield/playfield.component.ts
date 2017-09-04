@@ -29,7 +29,7 @@ export class PlayFieldComponent {
         button.set('text', this.player.toUpperCase());
         button.set('isEnabled', false);
 
-        this.scores[this.player] = this.scores[this.player] + button.get('score');
+        this.scores[this.player] = this.scores[this.player] + parseInt(button.get('score'));
 
         if (GameService.checkWins(this.scores[this.player])) {
             this.router.navigate(['gameresult/' + this.player.toUpperCase()]);

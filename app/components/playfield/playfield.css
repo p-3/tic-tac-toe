@@ -3,11 +3,11 @@ button {
     color: darkslategray;
     text-align: center;
     font-size: 90%;
-    font-weight: bolder;
+    font-weight: bold;
     animation-name: animation;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    font-family: 'MobileFont';
+    font-family: 'Mobile Font';
 }
 
 button:active {
@@ -16,7 +16,7 @@ button:active {
 
 label {
     font-size: 40px;
-    font-family: 'MobileFont';
+    font-family: 'Mobile Font';
     color: darkslategray;
     text-align: center;
 }

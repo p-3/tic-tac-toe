@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {ActivatedRoute} from '@angular/router';
 import {Page} from 'ui/page';
-import {TNSFontIconService} from 'nativescript-ngx-fonticon';
 
 @Component({
     moduleId: module.id,
@@ -14,7 +13,7 @@ export class GameResultComponent implements OnInit {
     private result: any;
     private id: any;
 
-    constructor(private router: Router, private route: ActivatedRoute, private page: Page, private fonticon: TNSFontIconService) {
+    constructor(private router: Router, private route: ActivatedRoute, private page: Page) {
         page.actionBarHidden = true;
     }
 
