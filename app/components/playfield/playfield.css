@@ -7,7 +7,7 @@ button {
     animation-name: animation;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    font-family: 'Mobile Font';
+    font-family: 'Mobile Font', 'MobileFont', serif;
 }
 
 button:active {
@@ -16,7 +16,7 @@ button:active {
 
 label {
     font-size: 40px;
-    font-family: 'Mobile Font';
+    font-family: 'Mobile Font', 'MobileFont', serif;
     color: darkslategray;
     text-align: center;
 }

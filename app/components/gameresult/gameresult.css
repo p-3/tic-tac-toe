@@ -1,25 +1,33 @@
 button {
     color: darkslategray;
     text-align: center;
-    font-size: 20px;
     background-color: lightgray;
-    font-family: 'Mobile Font';
-    height: 40px;
+    font-family: 'Mobile Font', 'MobileFont', serif;
+    text-transform: uppercase;
 }
 
 .trophy {
     font-size: 150px;
     text-align: center;
     color: lightgray;
-    font-family: 'FontAwesome';
+    font-family: 'FontAwesome', 'fontawesome-webfont';
     padding-top: 100px;
+}
+
+.play-again {
+    color: darkslategray;
+    text-align: center;
+    font-size: 20px;
+    background-color: lightgray;
+    font-family: 'Mobile Font', 'MobileFont', serif;
+    height: 40px;
 }
 
 .result {
     font-size: 40px;
     color: darkslategray;
     text-align: center;
-    font-family: 'Mobile Font';
+    font-family: 'Mobile Font', 'MobileFont', serif;
 }
 
 .madeby {
