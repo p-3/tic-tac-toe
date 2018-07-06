@@ -4,7 +4,7 @@ import {AppRoutingModule} from './app.routing';
 import {AppComponent} from './app.component';
 
 import {GameService} from './services/game.service';
-import {PlayFieldComponent} from './components/playfield/playfield.component';
+import {BoardComponent} from './components/board/board.component';
 import {GameResultComponent} from './components/gameresult/gameresult.component';
 
 @NgModule({
@@ -17,7 +17,7 @@ import {GameResultComponent} from './components/gameresult/gameresult.component'
     ],
     declarations: [
         AppComponent,
-        PlayFieldComponent,
+        BoardComponent,
         GameResultComponent
     ],
     providers: [

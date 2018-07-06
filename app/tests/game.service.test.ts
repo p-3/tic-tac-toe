@@ -22,11 +22,11 @@ declare let expect: any;
 describe("game.service.ts unit testing", function() {
 
     it("56 should return win (true)", function() {
-        expect(GameService.checkWins(56)).toBe(true);
+        expect(this.GameService.checkWins(56)).toBe(true);
 
     });
     it("291 should return false", function() {
-        expect(GameService.checkWins(64)).toBe(false);
+        expect(this.GameService.checkWins(64)).toBe(false);
     });
 
 });
