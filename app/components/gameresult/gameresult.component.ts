@@ -23,6 +23,6 @@ export class GameResultComponent implements OnInit {
     }
 
     gameRestart() {
-        this.router.navigate(['playfield']);
+        this.router.navigate(['board']);
     }
 }
