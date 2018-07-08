@@ -9,9 +9,10 @@ import {Page} from 'ui/page';
     templateUrl: './gameresult.html',
     styleUrls: ['./gameresult.css']
 })
+
 export class GameResultComponent implements OnInit {
-    private result: any;
-    private id: any;
+    private result: string;
+    private id: string;
 
     constructor(private router: Router, private route: ActivatedRoute, private page: Page) {
         page.actionBarHidden = true;
@@ -19,9 +20,20 @@ export class GameResultComponent implements OnInit {
 
     ngOnInit(): void {
         this.id = this.route.snapshot.params['id'];
-        this.result = this.id === 'tie' ? 'tie game' : this.id + ' won the game!';
+        this.result = this.getResult();
     }
 
+    /*
+     * Check if the id contains the name of any och the players or if we have a tie game.
+     * Return the correct string to be displayed.
+     */
+    getResult(): string {
+        return this.id === 'tie' ? 'tie game' : this.id + ' won the game!';
+    }
+
+    /*
+     * If the button 'Play again' is clicked, route to the main page and start a new game.
+     */
     gameRestart() {
         this.router.navigate(['board']);
     }
